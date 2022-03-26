@@ -26,6 +26,10 @@ $(call inherit-product, vendor/motorola/hanoip/hanoip-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
+#AB Partition
+AB_OTA_PARTITIONS += vendor_boot
+
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -51,8 +55,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.oem.fingerprint.sh \
-    init.oem.fingerprint2.sh \
-		fstab.qcom_ramdisk
+    init.oem.fingerprint2.sh \ 
+    fstab.qcom_ramdisk
 
 # Lights
 PRODUCT_PACKAGES += \

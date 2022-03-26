@@ -43,6 +43,7 @@ AB_OTA_PARTITIONS += \
 		vendor_boot
 
 # Recovery
+TARGET_NO_RECOVERY := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # SELinux
